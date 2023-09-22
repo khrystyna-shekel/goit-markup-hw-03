@@ -53,9 +53,9 @@ img {
     margin-left: auto;
 }
 
-.section:not(:last-child) {
+/* .section:not(:last-child) {
     margin-bottom: 120px;
-}
+} */
 
 
 .logo {
@@ -114,24 +114,27 @@ img {
 .header-container {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--accent)
     
+}
+
+.page-header {
+    border-bottom: 1px solid var(--accent)
 }
 
 .header-nav {
 display: flex;
+align-items: center;
 }
 
 .header-logo {
-    margin-right: 76px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    margin-right: 76px;   
 }
 
 .header-menu {
     display: flex;
     gap: 40px;
-    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
     
 }
 
@@ -184,7 +187,7 @@ gap: 40px;
 }
 
 .hero-title {
-    width: 496px;
+    max-width: 496px;
     color: var(--WHITE, #FFF);
         text-align: center;
         font-size: 56px;
@@ -220,6 +223,7 @@ gap: 40px;
     display: flex;
     justify-content: center;
     gap: 24px;
+    padding: 120px 0;
 }
 
 .benefits-item {
@@ -227,6 +231,10 @@ gap: 40px;
 }
 
 /* WHAT ARE WE DOING */
+
+.what-section {
+padding-bottom: 120px;
+}
 
 .what-list {
 display: flex;
@@ -241,7 +249,7 @@ gap: 24px;
         line-height: 1.11;
         letter-spacing: 0.02em;
         text-transform: capitalize;
-        padding-bottom: 72px;   
+        margin-bottom: 72px;   
         
 }
 
@@ -283,9 +291,9 @@ align-items: center;
 
 /* PORTFOLIO */
 
-/* .portfolio-section {
-    padding-top: 100px;
-} */
+.portfolio-section {
+    padding-top: 96px;
+}
 
 .filter-button{
     color: var(--primary-brand);
@@ -306,6 +314,7 @@ align-items: center;
 .filter-button:focus {
     color: var(--white-bckg);
     background-color: var(--pressed-state);
+    border: 1px solid transparent;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -313,7 +322,6 @@ align-items: center;
     display: flex;
     justify-content: center;
     gap: 24px;
-    padding-top: 96px;
     margin-bottom: 72px;
     /* min-width: none; */
 }
@@ -323,6 +331,7 @@ display: flex;
 flex-wrap: wrap;
 row-gap: 48px;
 column-gap: 24px;
+border-top: none;
 }
 
 .card-item {
@@ -331,7 +340,6 @@ width: calc((100% - 48) / 30);
 
 .card-wrapper {
 padding: 32px 16px;
-border-top: none;
 border: 1px solid var(--accent);
 
 }
@@ -340,7 +348,8 @@ border: 1px solid var(--accent);
 
 .page-footer {
     background-color: var(--dark);
-    padding: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .footer-logo {
     margin-bottom: 16px;
