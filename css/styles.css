@@ -31,6 +31,7 @@ p {
 ul, ol {
     list-style-type: none;
     padding-left: 0;
+    margin: 0;
 }
 
 img {
@@ -322,6 +323,7 @@ text-align: center;
     display: flex;
     justify-content: center;
     gap: 24px;
+    margin: 0;
     margin-bottom: 72px;
     /* min-width: none; */
 }
@@ -358,7 +360,6 @@ border-top: none;
 }
 
 .footer-items {
-    width: 264px;
     padding: 0px;
 }
 
@@ -369,4 +370,5 @@ border-top: none;
         font-weight: 400;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        width: 264px;
 }
